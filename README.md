@@ -17,7 +17,7 @@ import xgboost
 import shap
 import pickle
 
-# train XGBoost model
+# train XGBoost model 
 X,y = shap.datasets.boston()
 model = xgboost.train({"learning_rate": 0.01}, xgboost.DMatrix(X, label=y), 100)
 
